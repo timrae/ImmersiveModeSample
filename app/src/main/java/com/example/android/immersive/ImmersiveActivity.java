@@ -28,6 +28,13 @@ import android.view.View;
 public class ImmersiveActivity extends AppCompatActivity {
     private static final int INITIAL_HIDE_DELAY = 300;
     private static final boolean USE_FULLSCREEN = true;
+
+    /** Change USE_LEGACY to true if you want to use the original layout file without
+     * the appcompat toolbar. To fully replicate the behavior in the original sample,
+     * you'll also need to extend from Activity instead of AppCompatActivity, set the
+     * theme to ImmersiveThemeLegacy instead of ImmersiveTheme, and comment out the
+     * get/set supportActionBar method calls.
+     */
     private static final boolean USE_LEGACY = false;
     private View mDecorView;
 

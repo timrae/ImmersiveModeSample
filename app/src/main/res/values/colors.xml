@@ -15,11 +15,7 @@
   -->
 
 <resources>
-    <color name="background_legacy">#f80</color>
-    <color name="fullscreen_control_overlay_color">#66000000</color>
+    <color name="control_overlay_color">#66000000</color>
     <color name="background">#FF8F00</color>
-    <color name="toolbar_color">#FF6F00</color>
-    <color name="statusbar_color">#E65100</color>
     <color name="text_color">#FFEB3B</color>
-
 </resources>

@@ -16,18 +16,13 @@
 
 <resources>
     <style name="ImmersiveThemeLegacy" parent="@style/android:Theme.Holo">
-        <item name="android:windowBackground">@color/background_legacy</item>
+        <item name="android:windowBackground">@color/background</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowActionBarOverlay">true</item>
         <item name="android:actionBarStyle">@style/ImmersiveActionBarStyleLegacy</item>
     </style>
     <style name="ImmersiveTheme" parent="@style/Theme.AppCompat">
         <item name="android:windowBackground">@color/background</item>
-        <item name="android:windowContentOverlay">@null</item>
-        <item name="android:windowActionBarOverlay">true</item>
-        <item name="android:actionBarStyle">@style/ImmersiveActionBarStyle</item>
-        <item name="colorPrimary">@color/toolbar_color</item>
-        <item name="colorPrimaryDark">@color/statusbar_color</item>
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
@@ -37,10 +32,8 @@
         <item name="android:windowActionBar">false</item>
     </style>
 
-    <style name="ImmersiveActionBarStyle" parent="Base.ThemeOverlay.AppCompat.ActionBar">
-    </style>
     <style name="ImmersiveActionBarStyleLegacy" parent="android:Widget.Holo.ActionBar.Solid">
-        <item name="android:background">@color/fullscreen_control_overlay_color</item>
+        <item name="android:background">@color/control_overlay_color</item>
         <item name="android:icon">@drawable/ic_launcher_translucent_actionbar</item>
     </style>
 

@@ -27,7 +27,7 @@
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:layout_gravity="bottom|center_horizontal"
-                      android:background="@color/fullscreen_control_overlay_color"
+                      android:background="@color/control_overlay_color"
                       android:orientation="horizontal">
             <Button android:id="@+id/placeholder_button"
                     android:layout_width="0dp"

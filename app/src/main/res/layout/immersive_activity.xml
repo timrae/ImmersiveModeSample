@@ -19,41 +19,29 @@
      UI visibility changes because we use the SYSTEM_UI_FLAG_LAYOUT_STABLE
      flag in addition to SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN and
      SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION. -->
-
-
-<!-- NOTE: Changing this to coordinator layout breaks the expected behavior -->
-<!-- <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
              android:layout_width="match_parent"
-             android:layout_height="match_parent"
-             android:fitsSystemWindows="true">
-        <!-- This is the main view containing the content and the toolbar -->
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <LinearLayout
-                android:id="@+id/linlay"
-                android:layout_width="fill_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical">
-                <android.support.v7.widget.Toolbar
-                    android:id="@+id/toolbar"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="?attr/colorPrimary"
-                    android:theme="@style/ImmersiveActionBarStyle"/>
-                <include layout="@layout/include_content" />
-            </LinearLayout>
-        </FrameLayout>
+             android:layout_height="match_parent">
+    <!-- Main content that is always shown and takes up the fullscreen -->
+    <include layout="@layout/include_content" />
 
-    <!-- bottom button -->
+    <!-- Controls that are overlaid over the main content when the user interrupts immersive mode -->
     <FrameLayout android:layout_width="match_parent"
-                 android:layout_height="match_parent">
+                 android:layout_height="match_parent"
+                 android:fitsSystemWindows="true"
+                 android:clipToPadding="false">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/control_overlay_color"
+            android:gravity="top"/>
         <LinearLayout android:id="@+id/fullscreen_content_controls"
                       android:layout_width="match_parent"
                       android:layout_height="wrap_content"
                       android:layout_gravity="bottom|center_horizontal"
-                      android:orientation="horizontal">
+                      android:orientation="horizontal"
+                      android:background="@color/control_overlay_color">
 
             <Button android:id="@+id/placeholder_button"
                     android:layout_width="0dp"

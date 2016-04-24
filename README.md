@@ -1,1 +1,1 @@
-This is a port of the [devbytes immersive mode sample](https://android.googlesource.com/platform/development/+/e7a6ab4/samples/devbytes/ui/ImmersiveMode) to gradle and the material design APIs.
+This is a port of the [devbytes immersive mode sample](https://android.googlesource.com/platform/development/+/e7a6ab4/samples/devbytes/ui/ImmersiveMode) to gradle and the material design APIs. See also the [YouTube video](https://www.youtube.com/watch?v=cBi8fjv90E4).
