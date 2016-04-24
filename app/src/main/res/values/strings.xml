@@ -15,7 +15,9 @@
   -->
 
 <resources>
+    <string name="top_marker">This is the top</string>
     <string name="immersive_mode">Immersive Mode</string>
+    <string name="immersive_drawer">Immersive Drawer</string>
     <string name="immersive_sticky">Immersive/Sticky</string>
     <string name="placeholder_button">Placeholder Button</string>
     <string name="placeholder_content">IMMERSIVE\nCONTENT</string>

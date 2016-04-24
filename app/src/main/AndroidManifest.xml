@@ -25,6 +25,16 @@
         android:label="@string/immersive_mode"
         android:allowBackup="true">
 
+        <activity android:name=".ImmersiveDrawerActivity"
+                  android:label="@string/immersive_drawer"
+                  android:configChanges="orientation|keyboardHidden|screenSize"
+                  android:theme="@style/ImmersiveTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".ImmersiveActivity"
             android:label="@string/immersive_mode"
             android:configChanges="orientation|keyboardHidden|screenSize"
